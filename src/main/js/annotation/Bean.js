@@ -5,6 +5,14 @@ _x.exportModule(
   function () {
     return _x.createAnnotation(
       {
+        construct: [
+          function (libs) {
+
+          },
+          function () {
+
+          }
+        ],
         staticProps: {},
         props: {},
         staticMethods: {},

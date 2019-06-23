@@ -10,19 +10,13 @@ describe('System module loader', function () {
     vm.setConfiguration({
       vmInfo: {
         loader: {
-          bootPath: '/test2/vm/boot',
-          extPath: '/test2/vm/ext'
         },
-        bootModules: [
-          'Core', 'common.Collection'
-        ],
-        extModules: [
-          'Ext', 'common.MagicCollection'
-        ]
+        bootModules: [],
+        extModules: []
       },
       mainProgramInfo: {
         loader: {
-          basePath: '/test2/program'
+          basePath: '/bean_app_context/program'
         },
         entryClassNames: 'MainProgram'
       }
