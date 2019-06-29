@@ -11,22 +11,19 @@ _x.exportModule(
       {
         props: {
           ball: {
-            _xConfig: {
-              annotations: [Injected],
-              type: Ball
-            }
+            _xConfig: true,
+            annotations: [Injected],
+            type: Ball
           },
           playerA: {
-            _xConfig: {
-              annotations: [Injected],
-              type: Player
-            }
+            _xConfig: true,
+            annotations: [Injected],
+            type: Player
           },
           playerB: {
-            _xConfig: {
-              annotations: [Injected],
-              type: Player
-            }
+            _xConfig: true,
+            annotations: [Injected],
+            type: Player
           }
         }
       }

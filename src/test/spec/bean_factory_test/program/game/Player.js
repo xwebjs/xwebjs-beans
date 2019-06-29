@@ -10,10 +10,9 @@ _x.exportModule(
       {
         props: {
           ball: {
-            _xConfig: {
-              annotations: [Injected],
-              type: Ball
-            }
+            _xConfig: true,
+            annotations: [Injected],
+            type: Ball
           }
         }
       }
