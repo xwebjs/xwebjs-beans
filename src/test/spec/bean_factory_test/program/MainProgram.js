@@ -1,16 +1,19 @@
 _x.exportModule(
   {
     imports: [
-      'framework.context.AppContext',
+      'framework.context.AnnotatedConfigApplicationContext',
       'game.Game'
     ]
   },
-  function (AppContext, Game) {
+  function (AnnotatedConfigApplicationContext, Game) {
     return _x.createCls(
       {
+        staticProps: {
+          appContext: null
+        },
         staticMethods: {
           main: function () {
-            var appContext = new AppContext({
+            this.$.appContext = new AnnotatedConfigApplicationContext({
               scan: [Game]
             })
           }

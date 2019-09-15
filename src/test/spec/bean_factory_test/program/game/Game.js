@@ -12,18 +12,15 @@ _x.exportModule(
         props: {
           ball: {
             _xConfig: true,
-            annotations: [Injected],
-            type: Ball
+            annotations: [Injected.valueOf(Ball.class)]
           },
           playerA: {
             _xConfig: true,
-            annotations: [Injected],
-            type: Player
+            annotations: [Injected.valueOf(Player.class)]
           },
           playerB: {
             _xConfig: true,
-            annotations: [Injected],
-            type: Player
+            annotations: [Injected.valueOf(Player.class)],
           }
         }
       }
