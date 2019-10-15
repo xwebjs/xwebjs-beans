@@ -10,8 +10,12 @@ describe('System module loader', function () {
         var vm = _x.getRootVM()
         vm.setConfiguration({
           vmInfo: {
-            loader: {},
-            bootModules: [],
+            loader: {
+              bootPath: '/system'
+            },
+            bootModules: [
+              'lang.lib', 'framework.lib'
+            ],
             extModules: []
           },
           mainProgramInfo: {
