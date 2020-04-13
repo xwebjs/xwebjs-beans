@@ -91,6 +91,7 @@ _x.exportModule(
 
           },
           prepareBeanFactory: function () {
+
           },
           postActionsOfBeanFactory: function (beanFactory) {
 
