@@ -119,7 +119,9 @@ _x.exportModule(
           /**
            * @param beanFactory {BeanFactory}
            */
-          loadBeanDefinitions:  function (beanFactory) {}
+          loadBeanDefinitions:  function (beanFactory) {
+
+          }
         }
       }
     )
