@@ -28,6 +28,8 @@ describe('System module loader', function () {
         // @Then
         vm.init().then(
           function (mainAppClass) {
+            expect(mainAppClass.$.status === 'done').toBeTruthy()
+            expect(mainAppClass.getCollectionSize() === 100).toBeTruthy()
             done()
           },
           function (errors) {
